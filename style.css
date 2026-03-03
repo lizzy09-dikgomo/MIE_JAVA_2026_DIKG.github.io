@@ -1,0 +1,121 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("momo 2's background image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: #cccccc;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    background-color: purple;
+
+}
+
+/* Hero section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, center);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content{
+    width: 100%;
+}
+
+img {
+    position:relative;
+    margin-left: 2px;
+    float: left;
+    clip-path: circle(50%);
+    
+}
+
+.hero h1{
+    font-weight: normal;
+    margin-top: -150px;
+}
+
+.hero h2 {
+    font: 48px;
+    margin: 10px 0;
+    margin-bottom: 80px;
+}
+
+.hero h3 {
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: normal;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 2px solid transparent;
+}
+
+.btn {
+    background-color: blueviolet;
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(113, 43, 226);
+    transform: translateY(-2px);
+}
+
+ h2 {
+    font-size: 20px;
+    color: white;
+ }
+
+ p {
+   font-size: 16px;
+   color: white;
+   line-height: 1.3;
+   margin-bottom: 15px;
+ }
+
+ 
