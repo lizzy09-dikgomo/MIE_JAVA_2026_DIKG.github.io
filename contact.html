@@ -3,46 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomolemo Lizzy Dikgomo | Contact</title>
     <link rel="stylesheet" href="style.css">
-    <title>Gomolemo Lizzy Dikgomo | Developer Portfolio</title>
 </head>
-<body>
-  
-    <!--Navigation-->
-    <header>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-        </nav>
-    </header>
 
-    <main>
-         <!-- Contact -->
-        <section id="contact">
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+
+        <div class="contact-container">
             <h2>Contact Me</h2>
 
-            <p>Email: gomolemolizzy010809@icloud.com</p>
-            <p>GitHub: <a href="https://github.com/lizzy09-dikgomo/MIE_JAVA_2026_YourStudentCode.github.io">My GitHub</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BzYImMSRuToqJ54lr0gv72Q%3D%3D">My LinkedIn</a></p>
+            <div class="contact-info">
+                <p>Email:
+                    <a href="mailto:gomolemolizzy010809@icloud.com">
+                        gomolemolizzy010809@icloud.com
+                    </a>
+                </p>
+
+                <p>GitHub:
+                    <a href="https://github.com/lizzy09-dikgomo"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                       View My GitHub
+                    </a>
+                </p>
+
+                <p>LinkedIn:
+                    <a href="https://www.linkedin.com/in/YOUR-USERNAME"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                       View My LinkedIn
+                    </a>
+                </p>
+            </div>
 
             <form id="contactForm">
-                <input type="text" id="name" placeholder="Name">
-                <input type="email" id="email" placeholder="Email">
-                <textarea placeholder="Your message" required></textarea>
-                <button type="submit">Send Message</button>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Your Name"
+                       required>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Your Email"
+                       required>
+
+                <textarea name="message"
+                          placeholder="Your Message"
+                          rows="5"
+                          required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+
             </form>
-        </section>
-    </main>
 
-     <footer>
-        <p>&copy; 2026 Gomolemo Lizzy Dikgomo | All Rights Reserved</p>
-    </footer>
+        </div>
 
-    </body>
-    </html>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Gomolemo Lizzy Dikgomo | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
