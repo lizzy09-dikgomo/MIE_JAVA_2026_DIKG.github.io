@@ -180,15 +180,6 @@ header nav ul li a.active {
     border: 3px solid white;
 }
 
-/* Pop in with spring + continuous ring pulse */
-    /* animation: profilePop 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both,
-               ringPulse 4s ease-in-out 1.5s infinite;
-
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-                border-color 0.4s ease,
-                box-shadow 0.4s ease;
-} */
-
 .hero img:hover {
     transform: scale(1.07);
     border-color: #c084fc;
@@ -255,15 +246,6 @@ header nav ul li a.active {
      position: relative;
     overflow: hidden;
 }
-
-/* Staggered entry */
-    /* animation: fadeSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 1.2s both,
-               floatUp 4.5s ease-in-out 2s infinite;
-
-    transition: background-color 0.3s ease,
-                transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-                box-shadow 0.3s ease;
-} */
 
 /* Second button floats slightly out of phase */
 .btn:nth-of-type(2) {
@@ -713,3 +695,11 @@ footer {
         padding: 30px 20px;
     }
 }
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

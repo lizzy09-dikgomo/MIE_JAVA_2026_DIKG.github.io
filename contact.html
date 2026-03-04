@@ -17,7 +17,6 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
-        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     </nav>
 </header>
 
@@ -85,6 +84,26 @@
 <footer>
     <p>&copy; 2026 Gomolemo Lizzy Dikgomo | All Rights Reserved</p>
 </footer>
+
+<script src="script.js"></script>
+
+<script>
+document.getElementById("contact-form")
+  .addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm(
+      "Service_rlzxl4t",
+      "template_s5g8x4c",
+      this
+    ).then(function() {
+        alert("Message sent successfully!");
+    }, function(error) {
+        alert("Failed to send message. Please try again.");
+        console.log(error);
+    });
+});
+</script>
 
 </body>
 </html>
