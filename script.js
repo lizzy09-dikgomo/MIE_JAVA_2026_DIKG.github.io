@@ -215,3 +215,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+// Initialize EmailJS (do this once — move to top of file if preferred)
+emailjs.init("6dGgVcCIPsFd_2qIT"); // 🔁 Replace with your Public Key
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_opyxI1d",
+      "template_euedwn1",
+      this
+    ).then(
+      function () {
+        alert("Message sent successfully!");
+      },
+      function (error) {
+        alert("Failed to send message: " + error.text);
+      }
+    );
+  });

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gomolemo Lizzy Dikgomo | Contact</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs-com@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -86,24 +87,6 @@
 </footer>
 
 <script src="script.js"></script>
-
-<script>
-document.getElementById("contact-form")
-  .addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    emailjs.sendForm(
-      "Service_rlzxl4t",
-      "template_s5g8x4c",
-      this
-    ).then(function() {
-        alert("Message sent successfully!");
-    }, function(error) {
-        alert("Failed to send message. Please try again.");
-        console.log(error);
-    });
-});
-</script>
 
 </body>
 </html>
